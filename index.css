@@ -1,0 +1,267 @@
+html {
+  --main-color: #000000cc;
+  
+  
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  transition: all 0.3s ease 0s;
+}
+
+
+.loader {
+  margin: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.75 rem auto;
+  transition: all 0.3s ease-out;
+  cursor:none;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1rem;
+}
+
+h3 {
+  margin: 0.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0 0.8rem;
+}
+
+ul {
+  margin: 0.5rem auto;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: auto;
+  background-image: url(assets/fondo-blanco-digital-numeros-codigo-binario/25335.jpg);
+}
+
+header {
+  position: fixed;
+  background-color: #ffffff;
+  border-radius: 0 0 1rem 1rem;
+  height: 15vh;
+}
+ 
+ 
+.nav-buttons {
+  color: #ffffff;
+  background-color: var(--main-color);
+  width: 80vw;
+  height: 15vh;
+  padding: 0;
+  border-radius: 0rem;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-buttons > * {
+  height: 3rem;
+  width: 3rem;
+  background-color: #ffffff;
+  color: var(--main-color);
+  border-radius: 50%;
+  margin: 0.05rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-buttons > *:hover {
+  background-color: #7c77776e;
+  box-shadow: 0px 15px 25px rgba(2, 12, 0, 0.822);
+  color: #fff;
+  transform: translateY(-10px) rotate(15deg);
+  cursor: none;
+}
+
+.nav-buttons > *:active {
+  transform: translateY(10px);
+ transform: rotate(-50deg);
+}
+
+main {
+  margin: 22.5vh auto 5vh;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "b";
+  row-gap: 5vh;
+}
+
+.perfil,
+.exp,
+.skills {
+  
+  transition: all 0.3s ease 0s;
+  color: var(--main-color);
+  background-color: var(--alternative-color);
+  height: 75vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.perfil,
+.exp,
+.skills > * {
+  margin: 0 auto;
+}
+
+.perfil {
+  text-align: center;
+}
+
+.exp > *,
+.skills > * {
+  margin: auto 3rem;
+}
+
+.info {
+  max-width: 100%;
+}
+
+.skills-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-info > * {
+  flex: 1 1 150px;
+  margin: 0.5rem;
+}
+
+footer {
+ 
+  height: 25vh;
+  margin: 2.5vh auto;
+  background-color: var(--main-color);
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .nav-buttons,
+  .perfil,
+  .exp,
+  .skills {
+    width: 95vw;
+  }
+
+  .exp > *,
+  .skills > * {
+    margin: auto 0.25rem;
+  }
+
+  .nav-buttons {
+    font-size: 1.25rem;
+  }
+
+  .nav-buttons > * {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+@media only screen and (max-height: 384px) and (orientation: landscape) {
+  h1 {
+    font-size: 1.25rem;
+    margin: 0.15rem auto;
+  }
+
+  /* h2 {
+    font-size: 1.15rem;
+    margin: 0.15rem auto;
+  } */
+
+  h3 {
+    font-size: 0.75rem;
+    margin: 0.15rem auto;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .perfil-pic img {
+    border: 0.05rem;
+    max-width: 100px;
+    margin: 0.05rem auto;
+  }
+
+  .nav-buttons,
+  .perfil,
+  .exp,
+  .skills {
+    width: 95vw;
+  }
+
+  /*   header {
+    height: 15vh;
+  }
+ */
+  .nav-buttons {
+    font-size: 1rem;
+  }
+
+  .nav-buttons > * {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+}
